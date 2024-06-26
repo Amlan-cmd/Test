@@ -4,6 +4,7 @@ Rule1Businessdata as
  from profile p join
       data d
  on p.id=d.contactid)
+//123
 
 
 
