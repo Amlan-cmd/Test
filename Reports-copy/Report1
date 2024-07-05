@@ -10,13 +10,13 @@ Employee_CTE (EmployeeNumber, Title) AS (
     FROM HumanResources.Employee
 ),
 
-/**Rule Start:Rule5OrderCompletion**/    
+/**RuleStart:Rule5OrderCompletion**/    
 Rule5OrderCompletion as
  (Select distinct o.orderid,o.orderstatus,u.uid
  from order o join
       uname u
  on orderid=u.uid)
-/**Rule End :Rule5OrderCompletion**/
+/**RuleEnd:Rule5OrderCompletion**/
 
 ,
 
